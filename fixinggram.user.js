@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        FixingGram
 // @namespace   ziptofaf
-// @description Zbior skryptow ktore doprowadzaja gram.pl do uzytecznosci
+// @description Zbior skryptow które doprowadzaja gram.pl do uzyteczności
 // @include     http://forum.gram.pl/*
 // @version     1
 // @grant       none
