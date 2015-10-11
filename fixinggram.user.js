@@ -21,8 +21,11 @@ $(".postUser").css("min-height", "0rem");
 $(".postActions").css("min-height", "0rem");
 $("body").css("background-image", "none");
 $("body").css("background-color", "#202020");
-$(".forumThreadList").css("background-color", "#4C4646");
-$("a:link").css("color", "#B6B6B4")
+$(".forumThreadList").css("background-color", "#413839");
+$(".bold").text("B")
+$(".italic").text("I")
+$(".underline").text("U")
+$(".spoiler").text("S")
 $("#main").css("background-color", "#404040")
 $(".categoryName").css("background-color", "#404040")
 $(".excerpt").css("color", "#B6B6B4")
