@@ -22,14 +22,17 @@ $(".postUser").css("min-height", "0rem");
 $(".postActions").css("min-height", "0rem");
 $("body").css("background-image", "none");
 $("body").css("background-color", "#202020");
-$(".forumThreadList").css("background-color", "#413839");
-$(".bold").text("B")
-$(".italic").text("I")
-$(".underline").text("U")
-$(".spoiler").text("S")
-$("#main").css("background-color", "#404040")
-$(".categoryName").css("background-color", "#404040")
-$(".excerpt").css("color", "#B6B6B4")
+$(".forumThreadList").css("background-color", "#484848");
+$("b").css("color", "white");
+$("i").css("color", "white");
+$("u").css("color", "white");
+$(".bold").text("B");
+$(".italic").text("I");
+$(".underline").text("U");
+$(".spoiler").text("S");
+$("#main").css("background-color", "#404040");
+$(".categoryName").css("background-color", "#404040");
+$(".excerpt").css("color", "#B6B6B4");
 $("<div class=\"navbuttons\"><span class=\"cbtn cbdp\" title=\"dodaj post\"><a onclick=\"addPost()\">Dodaj post</a></span></div>").insertBefore($(".pagination"));
 $(".breadcrumb").clone().insertBefore($(".pagination"));
 $(".threadTitle").css("font-size", "15.1px");
