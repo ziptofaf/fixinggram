@@ -5,7 +5,7 @@
 // @include     http://forum.gram.pl/*
 // @version     1
 // @grant       none
-// @require http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js
+// @require http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
 // @downloadURL https://raw.githubusercontent.com/ziptofaf/fixinggram/master/fixinggram.user.js
 // ==/UserScript==
 $(document).ready(function() {
