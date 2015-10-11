@@ -6,6 +6,7 @@
 // @version     1
 // @grant       none
 // @require http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
+// @require http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js
 // @downloadURL https://raw.githubusercontent.com/ziptofaf/fixinggram/master/fixinggram.user.js
 // ==/UserScript==
 $(document).ready(function() {
@@ -36,6 +37,12 @@ $(".excerpt").css("color", "#B6B6B4");
 $("<div class=\"navbuttons\"><span class=\"cbtn cbdp\" title=\"dodaj post\"><a onclick=\"addPost()\">Dodaj post</a></span></div>").insertBefore($(".pagination"));
 $(".breadcrumb").clone().insertBefore($(".pagination"));
 $(".threadTitle").css("font-size", "15.1px");
+
+  $(".cbtn").click(function () {
+   var dt = new Date();
+   var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+   $("#ftresc").text("\nPost napisany o godzinie " + time);
+  });
 
 $(".categoryName").click(function () {
   $(this).next().children().toggle();
