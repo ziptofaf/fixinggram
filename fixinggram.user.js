@@ -36,6 +36,7 @@ $(".spoiler").text("S");
 $("#main").css("background-color", "#404040");
 $(".categoryName").css("background-color", "#404040");
 $(".excerpt").css("color", "#B6B6B4");
+$(".breadcrumb").clone().insertBefore($(".pagination"));
 $(".threadTitle").css("font-size", "15.1px");
 
   $(".cbtn").click(function () {
