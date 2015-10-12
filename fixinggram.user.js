@@ -36,8 +36,6 @@ $(".spoiler").text("S");
 $("#main").css("background-color", "#404040");
 $(".categoryName").css("background-color", "#404040");
 $(".excerpt").css("color", "#B6B6B4");
-$("<div class=\"navbuttons\"><span class=\"cbtn cbdp\" title=\"dodaj post\"><a onclick=\"addPost()\">Dodaj post</a></span></div>").insertBefore($(".pagination"));
-$(".breadcrumb").clone().insertBefore($(".pagination"));
 $(".threadTitle").css("font-size", "15.1px");
 
   $(".cbtn").click(function () {
