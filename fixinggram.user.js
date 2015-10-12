@@ -12,6 +12,8 @@
 $(document).ready(function() {
 $(".threadInfo").hide();
 $(".content").css("color", "white");
+$(".post").css("background-color", "#404040");
+
 $("p").css("color", "white");
 $(".profileLink").css("max-width", "75px");
 $(".profileLink").css("max-height", "75px");
