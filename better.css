@@ -68,9 +68,12 @@ u {
   font-size: 15.1px !important;
 }
 .thread:nth-child(2n) {
-  background-color: #606050 !important;
+  background-color: #505050 !important;
 }
 
 .post:nth-child(2n) {
-  background-color: #606050 !important;
+  background-color: #505050 !important;
+}
+.post {
+  color: white !important;
 }
