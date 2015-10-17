@@ -74,6 +74,10 @@ u {
 .post:nth-child(2n) {
   background-color: #505050 !important;
 }
+.post:nth-child(2n) > .spoiler {
+  color: #505050 !important;
+}
+
 .post {
   color: white !important;
 }
