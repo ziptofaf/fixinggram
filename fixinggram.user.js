@@ -19,7 +19,6 @@ GM_addStyle (jqUI_CssSrc);
 $(".bold").text("B");
 $(".italic").text("I");
 $(".underline").text("U");
-$(".spoiler").text("S");
 
   $(".cbtn").click(function () {
    var dt = new Date();
