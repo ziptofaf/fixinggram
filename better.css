@@ -1,10 +1,10 @@
 .threadInfo {
   display: none;
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .content {
-  color: "white" !important;
+  color:white !important;
 }
 .profileLink {
   max-width: 75px !important;
@@ -42,15 +42,15 @@ body {
 }
 
 b {
-  color: "white" !important;
+  color:white !important;
 }
 
 i {
-  color: "white" !important;
+  color:white !important;
 }
 
 u {
-  color: "white" !important;
+  color:white !important;
 }
 
 #main {
