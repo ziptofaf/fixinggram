@@ -53,6 +53,10 @@ u {
   color:white !important;
 }
 
+p {
+  color: white !important;
+}
+
 #main {
   background-color: #404040 !important;
 }
@@ -76,4 +80,11 @@ u {
 }
 .post {
   color: white !important;
+}
+
+p {
+color: white !important;
+}
+.cyt {
+  color: #666;
 }
