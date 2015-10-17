@@ -12,7 +12,7 @@
 }
 
 .spoiler {
-  color: "#404040" !important;
+  color: #404040 !important;
 }
 
 .thread {
@@ -34,11 +34,11 @@
 
 body {
   background-image: none !important;
-  background-color: "#202020" !important;
+  background-color: #202020 !important;
 }
 
 .forumThreadList {
-  background-color: "#484848" !important;
+  background-color: #484848 !important;
 }
 
 b {
@@ -54,19 +54,19 @@ u {
 }
 
 #main {
-  background-color: "#404040" !important;
+  background-color: #404040 !important;
 }
 
 .categoryName {
-  background-color: "#404040" !important;
+  background-color: #404040 !important;
 }
 
 .excerpt {
-  color: "#B6B6B4" !important;
+  color: #B6B6B4 !important;
 }
 .threadTitle {
-  font-size: "15.1px" !important;
+  font-size: 15.1px !important;
 }
 .thread:nth-child(2n) {
-  background-color: "#505050" !important;
+  background-color: #505050 !important;
 }
