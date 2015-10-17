@@ -1,0 +1,72 @@
+.threadInfo {
+  display: none;
+  visibility:hidden;
+}
+
+.content {
+  color: "white" !important;
+}
+.profileLink {
+  max-width: 75px !important;
+  max-height: 75px !important;
+}
+
+.spoiler {
+  color: "#404040" !important;
+}
+
+.thread {
+  min-height: 0rem !important;
+  padding: 0rem 1rem !important;
+}
+
+.postContent {
+  min-height: 0rem !important;
+}
+
+.postUser {
+  min-height: 0rem !important;
+}
+
+.postActions {
+  min-height: 0rem !important;
+}
+
+body {
+  background-image: none !important;
+  background-color: "#202020" !important;
+}
+
+.forumThreadList {
+  background-color: "#484848" !important;
+}
+
+b {
+  color: "white" !important;
+}
+
+i {
+  color: "white" !important;
+}
+
+u {
+  color: "white" !important;
+}
+
+#main {
+  background-color: "#404040" !important;
+}
+
+.categoryName {
+  background-color: "#404040" !important;
+}
+
+.excerpt {
+  color: "#B6B6B4" !important;
+}
+.threadTitle {
+  font-size: "15.1px" !important;
+}
+.thread:nth-child(2n) {
+  background-color: "#505050" !important;
+}
