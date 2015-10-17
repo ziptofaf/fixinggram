@@ -53,10 +53,6 @@ u {
   color:white !important;
 }
 
-p {
-  color: white !important;
-}
-
 #main {
   background-color: #404040 !important;
 }
@@ -85,6 +81,7 @@ p {
 p {
 color: white !important;
 }
+
 .cyt {
-  color: #666;
+  color: #666 !important;
 }
