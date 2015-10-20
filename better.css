@@ -30,7 +30,10 @@
 
 .postActions {
   min-height: 0rem !important;
+
 }
+
+
 
 body {
   background-image: none !important;
@@ -95,4 +98,8 @@ color: white !important;
 }
 .cnfo {
   color: #666 !important;
+}
+
+.moderatorActions {
+  color: black !important;
 }
