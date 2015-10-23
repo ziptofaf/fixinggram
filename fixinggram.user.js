@@ -26,6 +26,11 @@ $(".underline").text("U");
    $("#ftresc").text("\nPost napisany o godzinie " + time);
   });
 
+$(".timeago").each(function (index) {
+  var dataDodania = $(this).attr("title");
+  $(this).text(dataDodania);
+});
+
 $(".categoryName").click(function () {
   $(this).next().children().toggle();
 });
