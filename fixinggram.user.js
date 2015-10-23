@@ -37,7 +37,7 @@ $(".categoryName").click(function () {
 
 $(".post").each(function (index) {
 url = $(this).find(".postNumber").attr("href");
-button = "<li><a class=\"action search\" title = \"Wyświetl ten post\" href=" + url + "\"#\"></li>";
+button = "<li><a class=\"action search\" title = \"Wyświetl ten post\" href=" + url + "></li>";
 $(this).find(".postActions").prepend(button);
 });
 
