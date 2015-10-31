@@ -23,18 +23,27 @@ def findMore(page)
   return result.attr("href")
 end
 
+def allowAdult(page)
+form = page.forms.first
+return if form.nil?
+form.submit
+end
+
 puts "Podaj nick uzytkownika ktorego gramsajt chcesz jako .txt (np. ziptofaf): "
 STDOUT.flush
 nick = gets.chomp
 address = "http://ja.gram.pl/#{nick}"
 puts address
 
+agent = Mechanize.new
+page = agent.get(address)
+allowAdult(page)
+
 list = Hash.new
 addressList = Array.new
 addressList.push(address)
 while address != "http://ja.gram.pl" do
   puts "Parsowanie #{address}"
-  agent = Mechanize.new
   page = agent.get(address)
   titles = getTitles(page)
   content = getContent(page)
