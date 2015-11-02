@@ -43,7 +43,7 @@ $(this).find(".postActions").prepend(button);
 });
 
 $(".cbdp").click(function () {
-  $(this).toggle();
+  $(".cbdp").toggle();
 });
 
 $(".closeButton").click(function () {
