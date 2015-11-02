@@ -36,7 +36,11 @@ address = "http://ja.gram.pl/#{nick}"
 puts address
 
 agent = Mechanize.new
+begin
 page = agent.get(address)
+rescue => e
+  exit
+end
 allowAdult(page)
 
 list = Hash.new

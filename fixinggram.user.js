@@ -14,6 +14,7 @@
 $(document).ready(function() {
 
 var jqUI_CssSrc = GM_getResourceText ("betterCSS");
+var clicks=0;
 GM_addStyle (jqUI_CssSrc);
 
 $(".bold").text("B");
@@ -37,8 +38,20 @@ $(".categoryName").click(function () {
 
 $(".post").each(function (index) {
 url = $(this).find(".postNumber").attr("href");
-button = "<li><a class=\"action search\" title = \"Wyświetl ten post\" href=" + url + "></li>";
+button = "<li><a class=\"action \" title = \"Wyświetl ten post\" href=" + url + "></li>";
 $(this).find(".postActions").prepend(button);
+});
+
+$(".cbdp").click(function () {
+  $(this).toggle();
+});
+
+$(".closeButton").click(function () {
+  clicks+=1;
+  if (clicks==2){
+   $(".cbdp").toggle();
+   clicks=0;
+  }
 });
 
 });
