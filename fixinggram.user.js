@@ -43,7 +43,9 @@ $(this).find(".postActions").prepend(button);
 });
 
 $(".cbdp").click(function () {
+  if ($(".addContent.active").length) {
   $(".cbdp").toggle();
+  }
 });
 
 $(".closeButton").click(function () {
