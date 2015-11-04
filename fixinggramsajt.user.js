@@ -13,4 +13,5 @@
 $(document).ready(function() {
   $(".av .ico").attr("width", "32px");
   $(".av img").attr("width", "32px");
+  $(".comment .ico").attr("width", "32px");
 });
