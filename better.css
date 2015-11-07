@@ -110,3 +110,7 @@ color: white !important;
 .dbox p {
   color: black !important;
 }
+
+.spoiler > b,i,u {
+  color:inherit !important;
+}
