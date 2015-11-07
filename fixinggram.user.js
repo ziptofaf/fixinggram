@@ -9,6 +9,7 @@
 // @grant    GM_xmlhttpRequest
 // @require http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
 // @require http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js
+// @require https://jquery-xml2json-plugin.googlecode.com/svn/trunk/jquery.xml2json.js
 // @resource betterCSS better.css
 // @downloadURL https://raw.githubusercontent.com/ziptofaf/fixinggram/master/fixinggram.user.js
 // ==/UserScript==
@@ -55,14 +56,16 @@ $(document).ready(function () {
       $(".ajaxor").after('<ul id=\"newsy\" class=\"threads ajaxnews\"></ul>')
       GM_xmlhttpRequest({
         method: 'GET',
-        url: 'http://techstorm.info/gramo/topics_list',
+        url: 'http://static0.gram.pl/rss/newsy.xml',
         onload: function (response) {
+
           var rawText = response.responseText;
-          var topics = jQuery.parseJSON(rawText);
-          for (i = 0; i < 5; i++) {
-            $('.ajaxnews').append("<li class =\"thread\"><div class=\"metadata\"><h3 class=\"threadTitle\"><a href="+ topics[i][1] + " title=\"Przejdź do newsa\">" + topics[i][0] + "</a></h3></div></li>");
-            requestSent=true;
+          //alert (rawText);
+          var rss = $.xml2json(rawText); // uwazam XML za zlo i zawsze go zwalczam!
+          for (i=0; i<6; i++) {
+          $('.ajaxnews').append("<li class =\"thread\"><div class=\"metadata\"><h3 class=\"threadTitle\"><a href="+ ($(rss.channel.item)[i].link) + " title=\"Przejdź do newsa\">" + ($(rss.channel.item)[i].title) + "</a></h3></div></li>");
           }
+          requestSent=true;
         }
       });
     }
