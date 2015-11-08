@@ -117,6 +117,6 @@ color: white !important;
 a {
   color: #F0F7FF !important;
 }
-a:visited {
+.threads a:visited {
   color: grey !important;
 }
