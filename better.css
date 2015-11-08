@@ -114,3 +114,9 @@ color: white !important;
 .spoiler > b,i,u {
   color:inherit !important;
 }
+a {
+  color: #F0F7FF !important;
+}
+a:visited {
+  color: grey !important;
+}
