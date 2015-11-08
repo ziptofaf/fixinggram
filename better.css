@@ -114,7 +114,7 @@ color: white !important;
 .spoiler > b,i,u {
   color:inherit !important;
 }
-a {
+.threads a {
   color: #F0F7FF !important;
 }
 .threads a:visited {
