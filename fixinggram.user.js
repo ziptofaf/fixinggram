@@ -9,11 +9,10 @@
 // @grant    GM_xmlhttpRequest
 // @require http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
 // @require http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js
-// @require jquery.xml2json.js
+// @require http://raw.githubusercontent.com/sparkbuzz/jQuery-xml2json/master/src/xml2json.js
 // @downloadURL https://raw.githubusercontent.com/ziptofaf/fixinggram/master/fixinggram.user.js
 // ==/UserScript==
 $(document).ready(function () {
-  GM_addStyle(jqUI_CssSrc);
   $('.bold').text('B');
   $('.italic').text('I');
   $('.underline').text('U');
@@ -44,6 +43,7 @@ $(document).ready(function () {
           var rawText = response.responseText;
           //alert (rawText);
           var rss = $.xml2json(rawText); // uwazam XML za zlo i zawsze go zwalczam!
+          alert (rss);
           for (i=0; i<6; i++) {
           $('.ajaxnews').append("<li class =\"thread\"><div class=\"metadata\"><h3 class=\"threadTitle\"><a href="+ ($(rss.channel.item)[i].link) + " title=\"Przejdź do newsa\">" + ($(rss.channel.item)[i].title) + "</a></h3></div></li>");
           }
@@ -53,4 +53,5 @@ $(document).ready(function () {
     }
   });
   $(".ajaxor").css('cursor', 'pointer');
+  $(".categoryName").css('cursor', 'pointer');
 });
