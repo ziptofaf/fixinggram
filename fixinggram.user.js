@@ -10,12 +10,9 @@
 // @require http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
 // @require http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js
 // @require https://jquery-xml2json-plugin.googlecode.com/svn/trunk/jquery.xml2json.js
-// @resource betterCSS better.css
 // @downloadURL https://raw.githubusercontent.com/ziptofaf/fixinggram/master/fixinggram.user.js
 // ==/UserScript==
 $(document).ready(function () {
-  var jqUI_CssSrc = GM_getResourceText('betterCSS');
-  var clicks = 0;
   GM_addStyle(jqUI_CssSrc);
   $('.bold').text('B');
   $('.italic').text('I');
@@ -32,23 +29,8 @@ $(document).ready(function () {
   $('.categoryName').click(function () {
     $(this).next().children().toggle();
   });
-  $('.post').each(function (index) {
-    url = $(this).find('.postNumber').attr('href');
-    button = '<li><a class="action " title = "Wyświetl ten post" href=' + url + '></li>';
-    $(this).find('.postActions').prepend(button);
-  });
-  $('.cbdp').click(function () {
-    if ($('.addContent.active').length) {
-      $('.cbdp').toggle();
-    }
-  });
-  $('.closeButton').click(function () {
-    clicks += 1;
-    if (clicks == 2) {
-      $('.cbdp').toggle();
-      clicks = 0;
-    }
-  });
+
+
   $('.forumThreadList').prepend('<header class="categoryName ajaxor"><h3 class="title">Kliknij aby wyświetlić newsy</h3></header>');
   var requestSent = false;
   $('.ajaxor').click(function () {
