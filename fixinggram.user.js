@@ -43,9 +43,9 @@ $(document).ready(function () {
           var rawText = response.responseText;
           //alert (rawText);
           var rss = $.xml2json(rawText); // uwazam XML za zlo i zawsze go zwalczam!
-          alert (rss);
           for (i=0; i<6; i++) {
-          $('.ajaxnews').append("<li class =\"thread\"><div class=\"metadata\"><h3 class=\"threadTitle\"><a href="+ ($(rss.channel.item)[i].link) + " title=\"Przejdź do newsa\">" + ($(rss.channel.item)[i].title) + "</a></h3></div></li>");
+          $('.ajaxnews').append("<li class =\"thread\"><div class=\"metadata\"><h3 class=\"threadTitle\"><a href="+ ($(rss.rss.channel.item)[i].link) +
+                                " title=\"Przejdź do newsa\">" + ($(rss.rss.channel.item)[i].title) + "</a></h3></div></li>");
           }
           requestSent=true;
         }
